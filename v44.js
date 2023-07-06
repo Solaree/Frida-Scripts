@@ -63,7 +63,7 @@ const Connect = {
     }
 }
 
-const SetupMessaging = {
+const SetupMessaging = { // CryptoPatcher unfinished
     init() {
         Armceptor.replace(Libg.offset(0x847370), [0x00, 0x00, 0x50, 0xE1]); // Messaging::encryptAndWrite
         Armceptor.replace(Libg.offset(0xA185D4), [0x05, 0x00, 0xA0, 0xE3]); // State
